@@ -1,0 +1,53 @@
+.shipping{
+    width: 700px;
+    height: 400px;
+    background-color: tomato;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+    display: none;
+}
+.shipping .total-shippin{
+    text-align: center;
+}
+.shipping .cartcheck td{
+    position: relative;
+    top: 60px;
+    padding: 10px 50px;
+}
+.shipping .title-status{
+    text-align: center;
+    padding: 170px 0px;
+}
+.shipping .fa-truck-arrow-right{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    padding: 10px;
+    font-size: 30px;
+    animation-name: runahead;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    
+    display: none;
+}
+.shipping .total-shippin{
+    position: absolute;
+    display: flex;
+    top: 20px;
+    left: 80%;
+    /* transform: translate(-50%); */
+}
+@keyframes runahead{
+    0%{
+        left: 10px;
+    }
+    100%{
+        opacity: 0;
+        left: 300px;
+    }
+}

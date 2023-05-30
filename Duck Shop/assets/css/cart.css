@@ -1,0 +1,73 @@
+/*------------------- cart -------------- */
+.cart{
+    
+    position: fixed;
+    width: 50%;
+    height: 550px;
+    overflow-y: scroll;
+    margin: auto;
+    text-align:  center;
+    padding-top: 30px;
+    padding-left: 10px;
+    right: 0;
+    top: 66px;
+    background-color: var(--tomato);
+    border-bottom-left-radius: 5px ;
+    box-shadow: -10px 5px 10px rgba(11, 11, 11, 0.559);
+    transition: all 0.5s ease;
+    animation: slideLeft ease 1s;
+    display: none;
+}
+.cart table{
+    width: 100%;
+}
+.cart table thead tr th:first-child{
+    text-align: left;
+}
+.cart table tr td {
+    border-bottom: 1px solid var(--smoke);
+    padding: 12px 0;
+}
+.cart table thead tr th{
+    text-align: center;
+}
+.cart table tbody tr td{
+    text-align: center;
+}
+.cart .fa-times{
+    align-items: center;
+    margin-top: -20px;
+    font-size: 20px;
+    width: 25;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 22px;
+}
+.cart .fa-times:hover{
+    background-color: white;
+    color: var(--tomato);
+}
+.cart .fa-trash{
+    font-size: 20px;
+}
+.cart .fa-trash:hover{
+    color: white;
+}
+.cart .btn-buy{
+    background-color: white;
+    width: max-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 0px black;
+    margin-bottom: 10px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.cart .btn-buy:hover{
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+}

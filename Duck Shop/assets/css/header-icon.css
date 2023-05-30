@@ -1,0 +1,36 @@
+.header .icon-header{
+    float: right;
+    padding: 0 26px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.header .icon-nav{
+    line-height: 66px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.header .fa-shopping-cart span{
+    font-size: 15px;
+}
+
+.header .icon-header:hover{
+    background-color: var(--tomato);
+    border-radius: 5px;
+    color: var(--white);
+}
+/* header logo */
+.header .logo{
+    position: absolute;
+    line-height: 66px;
+    font-family: 'Lobster', cursive;
+    font-size: x-large;
+    left: 25px;
+    cursor: pointer;
+}
+
+.header .logo span{
+    color: var(--tomato);
+    font-size: xx-large;
+}

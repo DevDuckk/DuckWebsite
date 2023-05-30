@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --blue: #8470FF;
+    --white: #FFFFFF;
+    --tomato: #FF6347;
+    --pink: #FF1493;
+    --black: #0B0C10;
+    --grey: #1F2833;
+    --cyanblur: #66fcf28f;
+    --whitesmoke: #C5C6C7;
+    --cyan: #66FCF1;
+    --blackCyan: #45A29E;
+}
+html{
+    background-image: url(https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png);
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+}
+body{
+    font-family: cursive;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ------------ header -------------- */
+header{
+    background-color: var(--grey);
+    color: var(--whitesmoke);
+    padding: 20px 20px;
+    font-family: 'Lobster', cursive;
+    box-shadow: 0px 5px 10px var(--blackCyan);
+}
+header .logo{
+    /* position: relative; */
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 95% auto;
+}
+header .logo span{
+    font-size: 40px;
+    color: var(--cyan);
+}
+header .btn-logo{
+    cursor: pointer;
+}
+
+/* ----- menu --------------- */
+header .menu{
+    float: right;
+    background-color: var(--blackCyan);
+    /* padding: 0 17px; */
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+header .menu .icon-header{
+    font-size: 20px;
+    line-height: 50px;
+}
+header .menu:hover {
+    color: var(--cyan);
+    background-color: var(--grey);
+    box-shadow: 0px 0px 20px var(--white);
+}
+
+/* ---------- nav ------------ */
+
+#navList{
+    position: relative;
+    float: right;
+    padding: 20px 0;
+    border-bottom: 2px solid var(--cyan);
+    /* background-color: var(--cyanblur); */
+    backdrop-filter: blur(5px);
+    animation-name: slideupnav;
+    animation-duration: 1s;
+    display: none;
+}
+#navList a{   
+    text-decoration: none;
+    padding: 20px;
+}
+#navList a span{
+    font-family: cursive;
+}
+#fb-icon{
+    color:blue;
+}
+#ins-icon{
+    color: red;
+}
+#phone-icon{
+    color:greenyellow;
+}
+#more-icon{
+    color: var(--blackCyan);
+}
+@keyframes slideupnav{
+    0%{top: 0px;}
+    30%{top: 20px;}
+    100%{top: 0px;}
+}
+
+/* ------------- box-facebook ------------- */
+.header-content .box-facebook{
+    width: 620px;
+    height: 400px;
+    background-color: var(--cyanblur);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -35%);
+    border-radius: 10px;
+    animation-name: slideup;
+    animation-duration: 1s;
+    border: 2px solid var(--cyan);
+    display: none;
+}
+.header-content .box-facebook img{
+    display: block; 
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left:10px;
+    border-radius: 5px;
+}
+.header-content .box-facebook a{
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    line-height: 30px;
+    background-color: var(--cyan);
+    box-shadow: 2px 2px 2px var(--grey);
+}
+.header-content .box-facebook a:hover{
+    box-shadow: 5px 5px 10px var(--blackCyan);
+    font-weight: bolder;
+}
+/* -------------- box - instagram ---------*/
+
+.header-content .box-instagram{
+    width: 620px;
+    height: 465px;
+    background-color: var(--cyanblur);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -35%);
+    border-radius: 10px;
+    animation-name: slideup;
+    animation-duration: 1s;
+    border: 2px solid var(--cyan);
+    display: none;
+}
+.header-content .box-instagram img{
+    display: block; 
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left:10px;
+    border-radius: 10px;
+}
+.header-content .box-instagram a{
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    line-height: 30px;
+    background-color: var(--cyan);
+    box-shadow: 2px 2px 2px var(--grey);
+}
+.header-content .box-instagram a:hover{
+    box-shadow: 5px 5px 10px var(--blackCyan);
+    font-weight: bolder;
+}
+/* ------------- box-phone ------------- */
+.header-content .box-phone{
+    width: 300px;
+    height: 100px;
+    background-color: var(--cyanblur);
+    backdrop-filter: blur(2px);
+    border: 2px solid var(--cyan);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 100px;
+    float: right;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 3px 5px 10px var(--cyan);
+    animation-name: slideup;
+    animation-duration: 1s;
+    display: none;
+}
+.box-phone .title span:first-child{
+    font-size: larger;
+    font-weight: bolder;
+}
+.box-phone .title .number{
+    font-style: italic;
+}
+@keyframes slideup{
+    0%{top: 100px;}
+    100%{top : 50%;}
+}
+
+/* ---------- box - more ------------ */
+.header-content .box-more{
+    background-color: var(--cyanblur);
+    backdrop-filter: blur(2px);
+
+    width: max-content;
+    height: 100px;
+    border: 2px solid var(--cyan);
+    border-radius: 10px;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -50%);
+    padding: 20px;
+    animation-name: slideup;
+    animation-duration: 1s;
+    display: none;
+}
+.header-content .box-more ul li{
+    list-style: none;
+}
+
+/* ------------ information ---------- */
+.nav-content nav ul li{
+    cursor: pointer;
+}
+.nav-content nav ul li span:last-child{
+    display: none;
+}
+.nav-content .list-inf img{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.nav-content .list-inf .content h4{
+    margin-top: 5px;
+}
+.nav-content .nav-ul span:hover{
+    font-weight: bolder;
+}
+.nav-content .active{
+    border: 2px solid var(--grey);
+    font-weight: bolder;
+
+}
+.nav-content{
+    display: none;
+}
+
+/* ------- nav - content ----------- */
+.nav-content{
+    margin: 50px;
+    background-color: var(--cyanblur);
+    width: max-content;
+    padding: 20px 40px;
+    border: 2px solid var(--cyan);
+    border-radius: 5px;
+}
+.nav-content ul li{
+    list-style: none;
+    margin-top: 20px;
+    background-color: var(--cyan);
+    box-shadow: 2px 2px 2px var(--grey);
+    max-width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+.nav-content ul li:hover{
+    box-shadow: 2px 5px 10px var(--blackCyan);
+}
+.nav-content h2{
+    color: var(--cyan);
+    text-shadow: 2px 2px 2px var(--grey);   
+}
+/* ------ box - video ------------ */
+.nav-content .box-video{
+    width: 600px;
+    height: 335px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+    animation-name: slideright;
+    animation-duration: 1s;
+    display: none;
+}
+.nav-content video{
+    position: relative;
+    width: 575px;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+
+}
+.nav-content .video-title{
+    background-color: var(--cyanblur);
+    border: 2px solid var(--cyan);
+    border-radius: 5px;
+
+}
+.nav-content .video-title .title{
+    color: var(--black);
+    text-align: center;
+    padding-bottom: 10px;
+}
+.nav-content .box-video .source-link{
+    padding: 10px;
+    
+}
+.nav-content .box-video .source-link span{
+    text-decoration: underline;
+}
+.nav-content .box-video .source-link ul li{
+    position: relative;
+    list-style: none;
+    background-color: var(--cyan);
+    width: max-content;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+}
+.nav-content .box-video .source-link li:hover{
+    left: 10px;
+}
+@keyframes slideright{
+    0%{left: 100px;}
+    100%{left: 50%;}
+}
+
+/* ------ box - about - me -------- */
+.nav-content .box-about-me{
+    display: grid;
+    width: 600px;
+    height: max-content;
+    background-color: var(--cyanblur);
+    backdrop-filter: blur(3px);
+
+    border-radius: 10px;
+    grid-template-columns: 200px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+    border: 2px solid var(--cyan);
+    animation-name: slideright;
+    animation-duration: 1s;
+}
+.nav-content .box-about-me img{
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px var(--grey);
+    max-width: 150px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(0, -50%);
+}
+.nav-content .box-about-me #content{
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 30px;
+}
+.nav-content .box-about-me #content h3{
+    color: var(--cyan);
+    text-shadow: 2px 2px 2px var(--black);
+}
+
+/* ------ box - link - web -------- */
+.nav-content .box-link-web{
+    display: grid;
+    grid-template-columns: 350px 350px;
+    text-align: center;
+    width: max-content;
+    height: auto;
+    background-color: var(--cyanblur);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -40%);
+    border: 2px solid var(--cyan);
+    animation-name: slideright;
+    animation-duration: 1s;
+}
+.nav-content .box-link-web img{
+    position: relative;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    top: 5px;
+    left: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px 10px var(--grey);
+}
+.nav-content .box-link-web .item{
+    position: relative;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.nav-content .box-link-web .item h4{
+    padding: 15px 0;
+    text-shadow: 2px 2px 5px var(--grey);
+}
+.nav-content .box-link-web .item a{
+    background-color: var(--cyan);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px var(--grey);
+}
+.nav-content .box-link-web .item a:hover{
+    font-weight: bolder;
+}
+
+/* ----------- other - project --------- */
+.nav-content .box-other{
+    text-align: center;
+    align-items: center;
+    width: 830px;
+    height: 490px;
+    background-color: var(--cyanblur);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -40%);
+    border: 2px solid var(--cyan);
+
+    animation-name: slideright;
+    animation-duration: 1s;
+    display: none;
+}
+.nav-content .box-other img{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 790px;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px var(--grey);
+}
+.nav-content .box-other a{
+    background-color: var(--cyan);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px var(--grey);
+    position: absolute;
+    top: 435px;
+    left: 100px;
+}

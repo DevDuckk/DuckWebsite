@@ -1,0 +1,63 @@
+/* ----------------search-btn----------------- */
+.header .search-btn{
+    width: 800px;
+    height: 200px;
+    background-color: rgba(255, 130, 108, 0.578);
+    /* margin-left: 19%; */
+    /* margin-top: 60px; */
+    border-radius: 10px;
+    color: rgb(254, 254, 254);
+    box-shadow: 10px 10px 10px rgb(247, 156, 140);
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    animation: slideUp ease 1s;
+    display: none;
+}
+@keyframes slideUp{
+    0%{
+        opacity: 0;
+        bottom: -100%;
+    }
+    100%{
+        opacity: 1;
+        bottom: 50%;
+    }
+}
+.header .btn{
+    text-align: center;
+    width: 50%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.619);
+    box-shadow: 2px 5px 10px rgb(203, 203, 203);
+    margin-top: 50px;
+    margin-left: 200px;
+}
+.header .search-btn .fa-times{
+    display: block;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    line-height: 25px; 
+    margin-left: 10px;
+    border: 1px solid rgb(35, 35, 35);
+    border-radius: 100%;
+}
+.header .search-btn .fa-times:hover{
+    background-color: var(--tomato);
+}
+.header .search-btn .search-title{
+    font-family: cursive;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header #search-btn-id .fa-search{
+    position: relative;
+    left: 235px;
+}

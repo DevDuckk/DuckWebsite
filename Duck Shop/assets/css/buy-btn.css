@@ -1,0 +1,15 @@
+/* -------------buy button--------- */
+.buy-now{
+    border: none;
+    background-color: var(--white);
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    font-family: cursive, monospace;
+    margin-bottom: 10px;
+}
+.buy-now:hover{
+    background-color: rgb(37, 37, 37);
+    color: var(--white);
+}

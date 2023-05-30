@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui;
+}
+
+:root{
+    --tomato: tomato;
+    --white: whitesmoke;
+    --smoke: rgb(182, 182, 182);
+    --smoke-low: rgba(182, 182, 182, 0.7);
+
+}
+
+html {
+    font-family:'Franklin Gothic Medium',;
+    font-size: 15px;
+    line-height: 1.5;
+    background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    height: 66;
+    background-color: var(--white);
+    box-shadow: 10px 0 15px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* -----active-------------- */
+.active{
+    background-color: var(--tomato);
+    color: white;
+}
+/*------------------------------- header icon ---------------------------------- */
+
+/* ----- animation ------------ */
+@keyframes slideLeft{
+    0%{
+        right: -100%;
+    }
+    100%{
+        right: 0;
+    }
+}
+
+

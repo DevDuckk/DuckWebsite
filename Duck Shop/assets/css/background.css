@@ -1,0 +1,37 @@
+/* ----------------background----------------------- */
+.background-web{
+    /* margin-top: 46px;  */
+    padding-top:  50%;
+    background: url('/assets/img/undraw_web_shopping_re_owap.png') top center / cover no-repeat;
+    background-size: 73%;
+}
+.background-web h4{
+    text-align: center;
+    font-family: cursive;   
+    position: relative;
+    bottom: 80px;
+    cursor: pointer;
+}
+.background-web .nameShop{
+    font-family: 'Lobster', cursive;
+    font-size: x-large;
+}
+.background-web .nameShop span{
+    font-size: xx-large;
+}
+.background-web .fa-facebook{
+    color: rgb(48, 48, 255);
+}
+.background-web .fa-phone{
+    color: rgb(30, 250, 30)
+}
+.background-web span{
+    color: var(--tomato);
+}
+.background-web .space{
+    font-weight: bolder;
+    border-radius: 5px;
+}
+.background-web .fa-heart{
+    color: red;
+}

@@ -1,0 +1,22 @@
+/*-------------------------- nav ----------------------*/
+.nav{
+    display: inline-block;
+}
+.nav .subnav{
+    position: relative;
+    display: inline-block;
+    line-height: 64px;
+    left: 200px;
+    font-family: cursive;
+    padding: 0 20px 0 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--white);
+}
+
+.nav .subnav:hover{
+    color: var(--tomato);
+    border-bottom: 2px var(--tomato) inset;
+    font-weight: bolder;
+}

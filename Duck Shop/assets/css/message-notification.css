@@ -1,0 +1,62 @@
+.notification .success
+,.error
+,.notiCart{
+    background-color: white;
+    border-left: 5px solid;
+    width: max-content;
+    height: auto;
+    padding: 10px 0;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    bottom: 150px;
+    left: 50px;
+    align-items: center;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.568);
+    animation: slideInLeft ease .5s, fideOut linear 1s 3s;
+} 
+.notification .fa-solid{
+    padding: 0 20px;
+}
+.notification .fa-circle-check{
+    color: greenyellow;
+}
+.notification .success{
+    border-color: greenyellow;
+}
+.notification .fa-circle-xmark{
+    color: red;
+}
+.notification .error{
+    border-color: red;
+}
+.notification .fa-cart-shopping{
+    color: greenyellow;
+}
+.notification .notiCart{
+    border-color: greenyellow;
+}
+.notification .fa-times{
+    padding-left: 30px;
+    padding-right: 10px;
+    color: rgb(126, 126, 126);
+    cursor: pointer;
+}
+
+
+@keyframes slideInLeft{
+    0%{
+        opacity: 0;
+        left: 0px;
+    }
+    100%{
+        opacity: 1;
+        left: 50px;
+    }
+}
+@keyframes fideOut{
+    100%{
+        opacity: 0;
+        left: 0;
+    }
+}
